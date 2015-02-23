@@ -1,0 +1,42 @@
+{
+  "name": "truskawka",
+  "version": "0.0.1",
+  "description": "downloader and store nominas from work",
+  "homepage": "https://github.com/jirsis/truskawka",
+  "author": {
+    "name": "Iñaki Reta Sabarrós",
+    "email": "ignacio.reta@gmail.com",
+    "url": "https://github.com/jirsis/"
+  },
+  "repository": "jirsis/truskawka",
+  "license": "MIT",
+  "keywords": [
+    "truskawka",
+    "mns",
+    "medianet",
+    "downloader"
+  ],
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "debug": "^2.1.1",
+    "meow": "^2.0.0",
+    "nightmare": "^1.7.0",
+    "prompt": "^0.2.14",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "zombie": "^2.5.1"
+  },
+  "scripts": {
+    "test": "grunt",
+    "start": "phantomjs nrabinowitz-pjscrape/pjscrape.js helloWorld.js"
+  }
+}
