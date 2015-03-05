@@ -2,13 +2,13 @@
 var debug = require('debug')('truskawka');
 var config = require('./config');
 var Horseman = require('node-horseman');
-var horseman = new Horseman();
-
-horseman.on('consoleMessage', function(msg){
-  console.log(msg);
-});
 
 if(config.url !== undefined){
+  var horseman = new Horseman();
+
+  horseman.on('consoleMessage', function(msg){
+    console.log(msg);
+  });
   var data = horseman
     .open(config.url)
     .manipulate(function(){
